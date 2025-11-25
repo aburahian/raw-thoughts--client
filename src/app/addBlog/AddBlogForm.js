@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useUser } from "@clerk/nextjs";
 import toast from "react-hot-toast";
+import Swal from "sweetalert2";
 
 export default function AddBlog() {
   const { register, handleSubmit, reset } = useForm();
@@ -24,13 +25,19 @@ export default function AddBlog() {
       );
       console.log("Saved:", res.data);
       if (res.data.insertedId) {
-        toast.success("Successfully posted!");
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Successfully posted!",
+          showConfirmButton: false,
+          timer: 1500,
+        });
 
         reset();
       }
     } catch (err) {
       console.log(err);
-      toast.error("Error posting blog");
+      Swal.fire("Error posting blog!");
     }
   };
 
