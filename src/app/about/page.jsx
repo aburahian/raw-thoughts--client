@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 font-sans">
-      {/* Hero */}
       <div className="text-center mb-16">
         <h1 className="text-4xl  text-[#fab12a] font-bold mb-4">About Us</h1>
         <div className="border-b border-[#fab12a] my-9"></div>
@@ -13,7 +12,6 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* Mission */}
       <div className="flex flex-col md:flex-row items-center mb-16 gap-8">
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -35,7 +33,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Team */}
       <div>
         <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

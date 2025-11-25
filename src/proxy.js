@@ -10,7 +10,7 @@ export default clerkMiddleware({
   async afterAuth(auth, req) {
     const { userId } = auth;
 
-    // If not logged in and route is not public, redirect to /sign-in
+   
     if (!userId && !isPublicRoute(req)) {
       return NextResponse.redirect(new URL("/logIn", req.url));
     }

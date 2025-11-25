@@ -4,7 +4,7 @@ import BlogDetailsCard from "@/Component/BlogDetailsCard";
 export default async function BlogDetailsPage({ params }) {
   const { id } = await params;
 
-  // Fetch the blog by ID
+
   const { data: blog } = await axios(
     `https://raw-thoughts.vercel.app/blogs/${id}`
   );

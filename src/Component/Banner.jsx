@@ -54,7 +54,7 @@ export default function SliderBanner() {
         </div>
       ))}
 
-      {/* Pagination Dots */}
+
       <div className="absolute bottom-4 w-full flex justify-center gap-2">
         {banners.map((_, idx) => (
           <button

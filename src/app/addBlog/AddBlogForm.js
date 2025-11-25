@@ -25,7 +25,7 @@ export default function AddBlog() {
       console.log("Saved:", res.data);
       if (res.data.insertedId) {
         toast.success("Successfully posted!");
-        alert("Blog posted!");
+
         reset();
       }
     } catch (err) {
