@@ -1,3 +1,4 @@
+"use client"
 export default function errorPage() {
   return (
     <div className="text-center my-14">
